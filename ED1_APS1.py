@@ -1,3 +1,7 @@
+
+#projeto python de comparação entre tipos de ordenação (Bubble Sort e Insertion Sort), contendo GUI e gráfico.
+#Criado em dupla por Leonardo Barbosa e Paulo Ricardo Egídio
+
 from tkinter import *
 from tkinter import ttk
 from random import seed
@@ -6,7 +10,6 @@ import timeit
 import matplotlib.pyplot as plt 
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg 
 
-#Made by Leonardo Barbosa and Paulo Ricardo
 
 class Application:
     #construtor da GUI
@@ -73,7 +76,7 @@ class Application:
             
         for i in range(1,5): 
                 
-            lista = teste(convert)
+            lista = cria_lista(convert)
             lista2 = list.copy(lista)#bubbleSort
             lista3 = list.copy(lista)#InsertionSort 
 
@@ -127,7 +130,7 @@ class Application:
 
 
 
-def teste(num):
+def cria_lista(num):
     seed(1)
     output = []
     for i in range(num):
